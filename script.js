@@ -1,1 +1,1 @@
-angular.module('tdlApp', []);
+angular.module('tdlApp', ['firebase']);

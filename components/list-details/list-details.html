@@ -1,0 +1,10 @@
+<div class="panel" ng-class="{'panel-primary': $ctrl.listItem.status == 'open', 'panel-danger': $ctrl.listItem.status !== 'open'  }">  <!--which ever one is true, adds the class. key is the class name -->
+    <div class="panel-heading">
+        <h3> {{$ctrl.listItem.title}}</h3>
+    </div>
+    <div class="panel-body">
+        <p><b>Details:</b>{{ $ctrl.listItem.details}} </p>   <!--controller as defaults to $ctrl in component.Default controller as configuration is $ctrl-->
+        <p><b>Complete By</b>{{$ctrl.listItem.dueDate}} </p>
+     <div class="btn btn-danger pull-right" ng-click="$ctrl.deleteItem()">Delete </div>  <!--$ctrl is default controllerAs-->
+    </div>
+</div>
